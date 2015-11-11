@@ -1,0 +1,391 @@
+// Import Bootstrap Compass integration
+@import "bootstrap-compass";
+
+// Import custom Bootstrap variables
+@import "bootstrap-variables";
+
+// Import Bootstrap for Sass
+@import "bootstrap";
+
+// Import Fontello icons for Sass(MY)
+@import "fontelo";
+/****** my Styles******/
+body{
+	font-family: 'Lato', sans-serif;
+	padding-top: 96px;
+}
+.container{
+	overflow:hidden;
+}
+/****** my variables******/
+$border: 6px;
+$font-color:#666d89;
+
+$small: 320px;
+$midle: 760px;
+$large: 1024px;
+/********** my MIXIN ***********/
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media only screen and (max-width: $small) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (max-width: $midle) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (max-width: $large) { @content; }
+  }
+}
+
+/****** my variables******/
+/****** header ********/
+header{
+	.navbar{
+		margin:0;
+		border-bottom:$border solid #323746;
+		.navbar-brand{
+			padding: 0;
+			margin-left:0 ! important;
+		}
+		.navbar-nav{
+			li{
+				a{
+					font:bold 12px/16px 'Lato';
+					text-transform: uppercase;
+					padding: 41px 9px 33px;
+					@include respond-to(medium-screens){
+		    			padding:10px ;
+		    		}
+				}
+				&:nth-child(2) a{
+					padding: 41px 20px 33px;
+					@include respond-to(medium-screens){
+		    			padding:10px ;
+		    		}
+		    	}
+		    	&:nth-child(3) a{
+					padding: 41px 8px 33px;
+					@include respond-to(medium-screens){
+		    			padding:10px ;
+		    		}
+		    	}
+		    	&:nth-child(4) a{
+					padding: 41px 21px 33px;
+					@include respond-to(medium-screens){
+		    			padding:10px ;
+		    		}
+		    	}
+		    	&:nth-child(5) a{
+					padding: 41px 8px 33px;
+					@include respond-to(medium-screens){
+		    			padding:10px ;
+		    		}
+		    	}
+			}
+		}
+	}	
+	.carouselHolder{
+		background:#F16C65;
+		border-bottom:$border solid #ea676b;
+		.carousel{
+			overflow: hidden;
+			height: 594px;
+			.carousel-control{
+				background:none;
+				color:#ca4549;
+				.icon-yelpleft-open:before{
+					margin: 0;
+					font-size: 40px;
+					position: relative;
+					top: 46%;
+				}
+				.icon-yelpright-open:before{
+					font-size: 40px;
+					position: relative;
+					top: 46%;
+					margin-left: -22px;
+				}
+			}
+			img{
+				max-height: 595px;
+				margin: 0 auto;
+			}
+		}
+	}
+}
+/****** header ********/
+/********main**********/
+#serviceHolder{
+	background:#f2f2f2;
+	border-bottom:$border solid #fff;
+	.service{
+		padding: 60px 10px 33px;
+		color:$font-color;
+		.top_text{
+				font:900 30px/30px "lato";
+				margin: 0 0 25px; 
+			}
+		.text{
+			font: 18px/28px "lato";
+			margin-bottom: 45px;
+		}
+		.row{
+			margin-bottom:20px; 
+		}
+		.col-lg-4{
+			p:nth-child(1){
+				font: 700 18px/20px "lato"; 
+			}
+			p{
+				padding-left: 79px;
+				font: 700 12px/21px "lato";  
+			}
+			p:before{
+				   border: 2px solid;
+				   border-radius: 50%;
+				   font-size: 35px;
+				   height: 60px;
+				   left: 2px;
+				   padding: 11px;
+				   position: absolute;
+				   top: 3%;
+				   width: 60px;
+			}
+		}
+	}
+}
+#portfolio{
+	background:#2d303a;
+	border-bottom:$border solid #323746;
+	.container{
+		padding:57px 10px 39px;
+		color: $font-color;
+		.top_text{
+			font:900 30px/40px "lato"; 
+			margin-bottom: 19px;
+		}
+		p{
+			font-size: 18px;
+			margin-bottom: 13px;
+		}
+		.thumbnail{
+			background:#464b5e;
+		}
+		.filter{
+			margin-bottom: 14px;
+			padding:0;
+			@include clearfix;
+			li{
+			  list-style: none;
+			  display: inline-block;
+			  margin-right: 6px;
+			  input[type="checkbox"] {
+				  display: none;
+				   + label {
+					  cursor: pointer;
+					  padding-left: 0;
+					}
+					+ label:before{
+					  border: 1px solid #666d89;
+					  border-radius: 5px;
+					  display: inline-block;
+					  font: 12px/20px "lato";
+					  letter-spacing: 0.001em;
+					  padding: 0 7px;
+					}
+				}
+				&:nth-child(1) input[type="checkbox"] + label:before {
+				  content: "All";
+				  
+				}
+				&:nth-child(2) input[type="checkbox"] + label:before {
+				  content: "Web Design";
+				  
+				}
+				&:nth-child(3) input[type="checkbox"] + label:before {
+					content: "Graphic Design";
+					
+				}
+				&:nth-child(4) input[type="checkbox"] + label:before {
+				  content: "Artwork";
+				 
+				}
+				input[type="checkbox"]:checked + label::before {
+				  color: #fff;
+				  border: 1px solid #ffffff;
+				}
+			}
+		}
+		.portfolioImg{
+			padding: 0;
+			@include clearfix;
+			li{
+				float: left;
+				list-style: none;
+				width: 23.5%;
+				margin:0 2% 1.8% 0; 
+  				@include respond-to(handhelds) { width: 100% ;}
+				a{
+					text-decoration: none;
+					img{
+						@include img-responsive;
+						width: 100%;
+					}
+				}
+				&:nth-child(4n+4){
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}
+#about{
+ 	background:#f2f2f2;
+	border-bottom:$border solid #fff;
+	color:$font-color;
+	.container{
+		padding: 59px 10px 57px;
+		img{
+			@include img-responsive;
+			width: 100%;
+			margin-bottom: 13px;
+		}
+		.top_text{
+			font:900 30px/40px "lato";
+			margin-bottom: 14px;
+			}
+		.text{
+			font-size: 18px;
+			line-height: 30px;
+			margin-bottom: 45px;
+		}
+		.name{
+			font:900 18px/27px "lato";
+			margin-bottom: 9px;
+		}
+		.Jensen{
+			font:normal 13px/18px "lato";
+			margin-bottom: 26px;
+		}
+		.Miles{
+			font:normal 13px/18px "lato";
+			margin-bottom: 9px;
+		}
+		.Visari{
+			font:normal 13px/18px "lato";
+			margin-bottom: 9px;
+		}
+		.socialLink{
+			@include clearfix;
+			padding:0px;
+			margin-left: -2px;
+			li{
+				float: left;
+				list-style: none;
+				margin-right: 1px;
+				a{
+					text-decoration: none;
+					color:$font-color;
+				}
+				a:before{
+					border: 1px solid #666d89;
+				    border-radius: 50%;
+				    font-size: 17px;
+				    height: 32px;
+				    padding: 7px;
+				    width: 32px;
+				}
+			}
+		}
+	}
+}
+#getQuote{
+ 	background: #f06c64;
+ 	border-bottom: $border solid #ea676b;
+ 	.container{
+ 		padding: 58px 10px 42px;
+ 		color: #f0d8d9;
+ 		.top_text{
+				font:900 30px/40px "lato";
+				margin-bottom: 16px;
+			}
+		.text{
+			font:18px/30px "lato";
+			margin-bottom: 43px;
+		}
+		.email{
+			.email_text{
+				width: 100%;
+				height:203px;
+				background: #d6564f;
+				color: #c6c8c9;
+				vertical-align: baseline;
+			    padding: 8px 0 0 15px;
+			    margin-bottom: 15px;
+			    border:0;
+			    border-radius:5px;
+			    font: 12px/19px "lato";
+			}
+			input{
+				margin-bottom: 6px;
+				padding-left: 15px;
+				border:0;
+				border-radius:5px;
+				font: 12px/19px "lato";
+				width: 100%;
+				height:38px;
+				background: #d6564f;
+				color: #c6c8c9;
+			}
+		}
+		.information{
+			line-height: 19px;
+			.head{
+				margin-bottom: 12px;
+				font: bold 18px/17px "lato";
+			}
+			.text{
+				font: 13px/21px "lato";
+				margin-bottom: 23px;
+			}
+			p{
+				font: 12px/19px "lato";
+    			margin-bottom: 3px;
+    			&:before{
+    				font-size: 12px;
+    			}
+			}
+		}
+ 	}
+}
+#footer{
+	background: #2d303a;
+	color:$font-color;
+	.container{
+		padding:22px 10px 13px;
+		p{
+			font: 12px/19px "lato";
+		}
+		.socialLink_footer{
+			@include clearfix;
+			padding:0px;
+			margin-left: -7px;
+			li{
+				float: right;
+				list-style: none;
+				a{
+					text-decoration: none;
+					color:$font-color;
+				}
+				a:before{
+					font-size: 17px;
+					width: 32px;
+					height: 32px;
+					border-radius:50%;
+					border: 1px solid $font-color;
+					padding:7px;
+				}
+			}
+		}
+	}
+}
