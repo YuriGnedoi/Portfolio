@@ -816,6 +816,7 @@ input[type="email"]{
   background: #393b3c none repeat scroll 0 0;
   border-radius: 7px;
   height: 65px;
+  float: left;
 }
 footer input[type="submit"]{
   background: #494c4d none repeat scroll 0 0;
@@ -1040,6 +1041,9 @@ footer p{
 .filter_content li span {
     padding: 16px 8px 20px 30px;
   }
+  .contact_top {
+    margin: 15px;
+  }
 }
 @media screen and (max-width: 868px){
    #menu-line {
@@ -1106,9 +1110,6 @@ footer p{
    }
    .filter li {
     margin: 0 15px 10px 10px;
-  }
-  .contact_top {
-    margin: 0;
   }
   .email::before {
     left: 15px;
@@ -1194,5 +1195,8 @@ footer p{
     text-align: center;
     padding:165px 10px 0 10px; 
     margin-bottom: 30px;
+   }
+   .social_bottom li:last-child{
+    border: 0;
    }
 }
