@@ -6,9 +6,8 @@
     <link rel="stylesheet" href="css/style.min.css?_v=20220829141708">
 </head>
 
-<body>
-	<div class="wrapper">
-		<header class="header">
+<div class="wrapper">
+  <header class="header">
         <div class="header__top top-header">
                 <div class="top-header__container">
                         <nav class="top-header__menu menu-top-header">
@@ -468,11 +467,495 @@
 
 </header>
 
-		<main>
-			<h1>H1 heading</h1>
-		</main>
+  <main class="page page__inner">
+    <div class="page__header">
+      <div class="page__container">
+        <h1 class="page__ttle title">Elf weapon</h1>
+        <nav class="page__bredcrumbs bredcrumbs">
+          <ul class="bredcrumbs__list">
+            <li class="bredcrumbs__item">
+              <a href="" class="bredcrumbs__link _icon-arrow"><span>Home</span></a>
+            </li>
+            <li class="bredcrumbs__item">
+              <span href="" class="bredcrumbs__current">Home</span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="catalog">
+      <div class="catalog__container">
+        <div class="catalog__body">
+          <div class="catalog__filter filter-catalog">
+            <button type="button" class="filter-catalog__title">Product Filter</button>
+            <div data-spollers class="filter-catalog__items">
+              <div class="filter-catalog__price price-filter">
+                <button type="button" data-spoller class="price-filter__title _icon-spoilerArrow">
+                  <span>Price</span></button>
+                <div data-range class="price-filter__body">
+                  <div class="price-filter__inputs">
+                    <input data-range-from="0" type="text" autocomplete="off" name="form[]" value="500"
+                      data-error="error" placeholder="" class="price-filter__input">
+                    <input data-range-to="5000" type="text" autocomplete="off" name="form[]" value="1000"
+                      data-error="error" placeholder="" class="price-filter__input">
+                  </div>
+                  <div data-range-item class="price-filter__range">
 
-		<footer class="footer">
+                  </div>
+                </div>
+
+              </div>
+              <div class="filter-catalog__item item-filter-catalog">
+                <button type="button" data-spoller class="item-filter-catalog__title _icon-spoilerArrow">
+                  <span>Product</span></button>
+                <div class="item-filter-catalog__body">
+                  <div class="item-filter-catalog__checkbox checkbox">
+                    <input id="c_1" data-error="error" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                    <label for="c_1" class="checkbox__label"><span
+                        class="checkbox__text">text<small>(250)</small></span></label>
+                  </div>
+                  <div class="item-filter-catalog__checkbox checkbox">
+                    <input id="c_2" data-error="error" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                    <label for="c_2" class="checkbox__label"><span
+                        class="checkbox__text">text<small>(250)</small></span></label>
+                  </div>
+                  <div class="item-filter-catalog__checkbox checkbox">
+                    <input id="c_3" data-error="error" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                    <label for="c_3" class="checkbox__label"><span
+                        class="checkbox__text">text<small>(250)</small></span></label>
+                  </div>
+                  <div class="item-filter-catalog__checkbox checkbox">
+                    <input id="c_4" data-error="error" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                    <label for="c_4" class="checkbox__label"><span
+                        class="checkbox__text">text<small>(250)</small></span></label>
+                  </div>
+                  <div class="item-filter-catalog__checkbox checkbox">
+                    <input id="c_5" data-error="error" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                    <label for="c_5" class="checkbox__label"><span
+                        class="checkbox__text">text<small>(250)</small></span></label>
+                  </div>
+                  <div class="item-filter-catalog__checkbox checkbox">
+                    <input id="c_6" data-error="error" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                    <label for="c_6" class="checkbox__label"><span
+                        class="checkbox__text">text<small>(250)</small></span></label>
+                  </div>
+                  <div class="item-filter-catalog__checkbox checkbox">
+                    <input id="c_7" data-error="error" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                    <label for="c_7" class="checkbox__label"><span
+                        class="checkbox__text">text<small>(250)</small></span></label>
+                  </div>
+                  <div class="item-filter-catalog__checkbox checkbox">
+                    <input id="c_8" data-error="error" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                    <label for="c_8" class="checkbox__label"><span
+                        class="checkbox__text">text<small>(250)</small></span></label>
+                  </div>
+                  <div class="item-filter-catalog__checkbox checkbox">
+                    <input id="c_9" data-error="error" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                    <label for="c_9" class="checkbox__label"><span
+                        class="checkbox__text">text<small>(250)</small></span></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="catalog__content">
+            <div class="catalog__control">
+              <select name="form[]" class="control" id="">
+                <option value="1" class="option" selected>Option 1</option>
+                <option value="2" class="option" selected>Option 2</option>
+                <option value="3" class="option" selected>Option 3</option>
+                <option value="4" class="option" selected>Option 4</option>
+              </select>
+            </div>
+            <div class="catalog__products">
+              <article class="product-card">
+                <div class="product-card__sle">-50%</div>
+                <div class="product-card__image">
+                  <span class="product-card__item-image-ibg product-card__item-image-ibg_contain">
+                    <picture><source srcset="img/main-page/cards/itemCard.webp" type="image/webp"><img src="img/main-page/cards/itemCard.jpg" alt="img"></picture>
+                  </span>
+                </div>
+                <div class="product-card__body">
+                  <h4 class="product-card__title">
+                    <a href="" class="product-card__link-title">Title Title Title Title Title Title Title Title</a>
+                  </h4>
+                  <div class="product-card__info info-product-card">
+                    <div class="info-product-card__size">95x18</div>
+                    <div class="info-product-card__material">Metal, Airon</div>
+                  </div>
+                  <div class="product-card__rating rating_set">
+                    <div class="rating__body">
+                      <div class="rating__active"></div>
+                      <div class="rating__items">
+                        <input type="radio" class="rating__item" value="1" name="rating">
+                        <input type="radio" class="rating__item" value="2" name="rating">
+                        <input type="radio" class="rating__item" value="3" name="rating">
+                        <input type="radio" class="rating__item" value="4" name="rating">
+                        <input type="radio" class="rating__item" value="5" name="rating">
+                      </div>
+                    </div>
+                    <div class="rating__value">3.6</div>
+                    <div class="rating__info">12 fidback</div>
+                  </div>
+                  <div class="product-card__footer">
+                    <div class="product-card__price">700 coins</div>
+                    <a href="" class="product-card__compare _icon-compare"></a>
+                    <a href="" class="product-card__favorite _icon-favorit"></a>
+                  </div>
+                  <button class="product-card__cart button"><span class="_icon-cart">To cart</span> </button>
+                </div>
+              </article>
+              <article class="product-card">
+                <div class="product-card__image">
+                  <span class="product-card__item-image-ibg product-card__item-image-ibg_contain">
+                    <picture><source srcset="img/main-page/cards/itemCard.webp" type="image/webp"><img src="img/main-page/cards/itemCard.jpg" alt="img"></picture>
+                  </span>
+                </div>
+                <div class="product-card__body">
+                  <h4 class="product-card__title">
+                    <a href="" class="product-card__link-title">Title Title Title Title Title Title Title Title</a>
+                  </h4>
+                  <div class="product-card__info info-product-card">
+                    <div class="info-product-card__size">95x18</div>
+                    <div class="info-product-card__material">Metal, Airon</div>
+                  </div>
+                  <div class="product-card__rating rating_set">
+                    <div class="rating__body">
+                      <div class="rating__active"></div>
+                      <div class="rating__items">
+                        <input type="radio" class="rating__item" value="1" name="rating">
+                        <input type="radio" class="rating__item" value="2" name="rating">
+                        <input type="radio" class="rating__item" value="3" name="rating">
+                        <input type="radio" class="rating__item" value="4" name="rating">
+                        <input type="radio" class="rating__item" value="5" name="rating">
+                      </div>
+                    </div>
+                    <div class="rating__value">3.6</div>
+                    <div class="rating__info">12 fidback</div>
+                  </div>
+                  <div class="product-card__footer">
+                    <div class="product-card__price">700 coins</div>
+                    <a href="" class="product-card__compare _icon-compare"></a>
+                    <a href="" class="product-card__favorite _icon-favorit"></a>
+                  </div>
+                  <button class="product-card__cart button"><span class="_icon-cart">To cart</span> </button>
+                </div>
+              </article>
+              <article class="product-card">
+                <div class="product-card__image">
+                  <span class="product-card__item-image-ibg product-card__item-image-ibg_contain">
+                    <picture><source srcset="img/main-page/cards/itemCard.webp" type="image/webp"><img src="img/main-page/cards/itemCard.jpg" alt="img"></picture>
+                  </span>
+                </div>
+                <div class="product-card__body">
+                  <h4 class="product-card__title">
+                    <a href="" class="product-card__link-title">Title Title Title Title Title Title Title Title</a>
+                  </h4>
+                  <div class="product-card__info info-product-card">
+                    <div class="info-product-card__size">95x18</div>
+                    <div class="info-product-card__material">Metal, Airon</div>
+                  </div>
+                  <div class="product-card__rating rating_set">
+                    <div class="rating__body">
+                      <div class="rating__active"></div>
+                      <div class="rating__items">
+                        <input type="radio" class="rating__item" value="1" name="rating">
+                        <input type="radio" class="rating__item" value="2" name="rating">
+                        <input type="radio" class="rating__item" value="3" name="rating">
+                        <input type="radio" class="rating__item" value="4" name="rating">
+                        <input type="radio" class="rating__item" value="5" name="rating">
+                      </div>
+                    </div>
+                    <div class="rating__value">3.6</div>
+                    <div class="rating__info">12 fidback</div>
+                  </div>
+                  <div class="product-card__footer">
+                    <div class="product-card__price">700 coins</div>
+                    <a href="" class="product-card__compare _icon-compare"></a>
+                    <a href="" class="product-card__favorite _icon-favorit"></a>
+                  </div>
+                  <button class="product-card__cart button"><span class="_icon-cart">To cart</span> </button>
+                </div>
+              </article>
+              <article class="product-card">
+                <div class="product-card__image">
+                  <span class="product-card__item-image-ibg product-card__item-image-ibg_contain">
+                    <picture><source srcset="img/main-page/cards/itemCard.webp" type="image/webp"><img src="img/main-page/cards/itemCard.jpg" alt="img"></picture>
+                  </span>
+                </div>
+                <div class="product-card__body">
+                  <h4 class="product-card__title">
+                    <a href="" class="product-card__link-title">Title Title Title Title Title Title Title Title</a>
+                  </h4>
+                  <div class="product-card__info info-product-card">
+                    <div class="info-product-card__size">95x18</div>
+                    <div class="info-product-card__material">Metal, Airon</div>
+                  </div>
+                  <div class="product-card__rating rating_set">
+                    <div class="rating__body">
+                      <div class="rating__active"></div>
+                      <div class="rating__items">
+                        <input type="radio" class="rating__item" value="1" name="rating">
+                        <input type="radio" class="rating__item" value="2" name="rating">
+                        <input type="radio" class="rating__item" value="3" name="rating">
+                        <input type="radio" class="rating__item" value="4" name="rating">
+                        <input type="radio" class="rating__item" value="5" name="rating">
+                      </div>
+                    </div>
+                    <div class="rating__value">3.6</div>
+                    <div class="rating__info">12 fidback</div>
+                  </div>
+                  <div class="product-card__footer">
+                    <div class="product-card__price">700 coins</div>
+                    <a href="" class="product-card__compare _icon-compare"></a>
+                    <a href="" class="product-card__favorite _icon-favorit"></a>
+                  </div>
+                  <button class="product-card__cart button"><span class="_icon-cart">To cart</span> </button>
+                </div>
+              </article>
+              <article class="product-card">
+                <div class="product-card__image">
+                  <span class="product-card__item-image-ibg product-card__item-image-ibg_contain">
+                    <picture><source srcset="img/main-page/cards/itemCard.webp" type="image/webp"><img src="img/main-page/cards/itemCard.jpg" alt="img"></picture>
+                  </span>
+                </div>
+                <div class="product-card__body">
+                  <h4 class="product-card__title">
+                    <a href="" class="product-card__link-title">Title Title Title Title Title Title Title Title</a>
+                  </h4>
+                  <div class="product-card__info info-product-card">
+                    <div class="info-product-card__size">95x18</div>
+                    <div class="info-product-card__material">Metal, Airon</div>
+                  </div>
+                  <div class="product-card__rating rating_set">
+                    <div class="rating__body">
+                      <div class="rating__active"></div>
+                      <div class="rating__items">
+                        <input type="radio" class="rating__item" value="1" name="rating">
+                        <input type="radio" class="rating__item" value="2" name="rating">
+                        <input type="radio" class="rating__item" value="3" name="rating">
+                        <input type="radio" class="rating__item" value="4" name="rating">
+                        <input type="radio" class="rating__item" value="5" name="rating">
+                      </div>
+                    </div>
+                    <div class="rating__value">3.6</div>
+                    <div class="rating__info">12 fidback</div>
+                  </div>
+                  <div class="product-card__footer">
+                    <div class="product-card__price">700 coins</div>
+                    <a href="" class="product-card__compare _icon-compare"></a>
+                    <a href="" class="product-card__favorite _icon-favorit"></a>
+                  </div>
+                  <button class="product-card__cart button"><span class="_icon-cart">To cart</span> </button>
+                </div>
+              </article>
+              <article class="product-card">
+                <div class="product-card__image">
+                  <span class="product-card__item-image-ibg product-card__item-image-ibg_contain">
+                    <picture><source srcset="img/main-page/cards/itemCard.webp" type="image/webp"><img src="img/main-page/cards/itemCard.jpg" alt="img"></picture>
+                  </span>
+                </div>
+                <div class="product-card__body">
+                  <h4 class="product-card__title">
+                    <a href="" class="product-card__link-title">Title Title Title Title Title Title Title Title</a>
+                  </h4>
+                  <div class="product-card__info info-product-card">
+                    <div class="info-product-card__size">95x18</div>
+                    <div class="info-product-card__material">Metal, Airon</div>
+                  </div>
+                  <div class="product-card__rating rating_set">
+                    <div class="rating__body">
+                      <div class="rating__active"></div>
+                      <div class="rating__items">
+                        <input type="radio" class="rating__item" value="1" name="rating">
+                        <input type="radio" class="rating__item" value="2" name="rating">
+                        <input type="radio" class="rating__item" value="3" name="rating">
+                        <input type="radio" class="rating__item" value="4" name="rating">
+                        <input type="radio" class="rating__item" value="5" name="rating">
+                      </div>
+                    </div>
+                    <div class="rating__value">3.6</div>
+                    <div class="rating__info">12 fidback</div>
+                  </div>
+                  <div class="product-card__footer">
+                    <div class="product-card__price">700 coins</div>
+                    <a href="" class="product-card__compare _icon-compare"></a>
+                    <a href="" class="product-card__favorite _icon-favorit"></a>
+                  </div>
+                  <button class="product-card__cart button"><span class="_icon-cart">To cart</span> </button>
+                </div>
+              </article>
+              <article class="product-card">
+                <div class="product-card__image">
+                  <span class="product-card__item-image-ibg product-card__item-image-ibg_contain">
+                    <picture><source srcset="img/main-page/cards/itemCard.webp" type="image/webp"><img src="img/main-page/cards/itemCard.jpg" alt="img"></picture>
+                  </span>
+                </div>
+                <div class="product-card__body">
+                  <h4 class="product-card__title">
+                    <a href="" class="product-card__link-title">Title Title Title Title Title Title Title Title</a>
+                  </h4>
+                  <div class="product-card__info info-product-card">
+                    <div class="info-product-card__size">95x18</div>
+                    <div class="info-product-card__material">Metal, Airon</div>
+                  </div>
+                  <div class="product-card__rating rating_set">
+                    <div class="rating__body">
+                      <div class="rating__active"></div>
+                      <div class="rating__items">
+                        <input type="radio" class="rating__item" value="1" name="rating">
+                        <input type="radio" class="rating__item" value="2" name="rating">
+                        <input type="radio" class="rating__item" value="3" name="rating">
+                        <input type="radio" class="rating__item" value="4" name="rating">
+                        <input type="radio" class="rating__item" value="5" name="rating">
+                      </div>
+                    </div>
+                    <div class="rating__value">3.6</div>
+                    <div class="rating__info">12 fidback</div>
+                  </div>
+                  <div class="product-card__footer">
+                    <div class="product-card__price">700 coins</div>
+                    <a href="" class="product-card__compare _icon-compare"></a>
+                    <a href="" class="product-card__favorite _icon-favorit"></a>
+                  </div>
+                  <button class="product-card__cart button"><span class="_icon-cart">To cart</span> </button>
+                </div>
+              </article>
+              <article class="product-card">
+                <div class="product-card__image">
+                  <span class="product-card__item-image-ibg product-card__item-image-ibg_contain">
+                    <picture><source srcset="img/main-page/cards/itemCard.webp" type="image/webp"><img src="img/main-page/cards/itemCard.jpg" alt="img"></picture>
+                  </span>
+                </div>
+                <div class="product-card__body">
+                  <h4 class="product-card__title">
+                    <a href="" class="product-card__link-title">Title Title Title Title Title Title Title Title</a>
+                  </h4>
+                  <div class="product-card__info info-product-card">
+                    <div class="info-product-card__size">95x18</div>
+                    <div class="info-product-card__material">Metal, Airon</div>
+                  </div>
+                  <div class="product-card__rating rating_set">
+                    <div class="rating__body">
+                      <div class="rating__active"></div>
+                      <div class="rating__items">
+                        <input type="radio" class="rating__item" value="1" name="rating">
+                        <input type="radio" class="rating__item" value="2" name="rating">
+                        <input type="radio" class="rating__item" value="3" name="rating">
+                        <input type="radio" class="rating__item" value="4" name="rating">
+                        <input type="radio" class="rating__item" value="5" name="rating">
+                      </div>
+                    </div>
+                    <div class="rating__value">3.6</div>
+                    <div class="rating__info">12 fidback</div>
+                  </div>
+                  <div class="product-card__footer">
+                    <div class="product-card__price">700 coins</div>
+                    <a href="" class="product-card__compare _icon-compare"></a>
+                    <a href="" class="product-card__favorite _icon-favorit"></a>
+                  </div>
+                  <button class="product-card__cart button"><span class="_icon-cart">To cart</span> </button>
+                </div>
+              </article>
+              <article class="product-card">
+                <div class="product-card__image">
+                  <span class="product-card__item-image-ibg product-card__item-image-ibg_contain">
+                    <picture><source srcset="img/main-page/cards/itemCard.webp" type="image/webp"><img src="img/main-page/cards/itemCard.jpg" alt="img"></picture>
+                  </span>
+                </div>
+                <div class="product-card__body">
+                  <h4 class="product-card__title">
+                    <a href="" class="product-card__link-title">Title Title Title Title Title Title Title Title</a>
+                  </h4>
+                  <div class="product-card__info info-product-card">
+                    <div class="info-product-card__size">95x18</div>
+                    <div class="info-product-card__material">Metal, Airon</div>
+                  </div>
+                  <div class="product-card__rating rating_set">
+                    <div class="rating__body">
+                      <div class="rating__active"></div>
+                      <div class="rating__items">
+                        <input type="radio" class="rating__item" value="1" name="rating">
+                        <input type="radio" class="rating__item" value="2" name="rating">
+                        <input type="radio" class="rating__item" value="3" name="rating">
+                        <input type="radio" class="rating__item" value="4" name="rating">
+                        <input type="radio" class="rating__item" value="5" name="rating">
+                      </div>
+                    </div>
+                    <div class="rating__value">3.6</div>
+                    <div class="rating__info">12 fidback</div>
+                  </div>
+                  <div class="product-card__footer">
+                    <div class="product-card__price">700 coins</div>
+                    <a href="" class="product-card__compare _icon-compare"></a>
+                    <a href="" class="product-card__favorite _icon-favorit"></a>
+                  </div>
+                  <button class="product-card__cart button"><span class="_icon-cart">To cart</span> </button>
+                </div>
+              </article>
+              <article class="product-card">
+                <div class="product-card__image">
+                  <span class="product-card__item-image-ibg product-card__item-image-ibg_contain">
+                    <picture><source srcset="img/main-page/cards/itemCard.webp" type="image/webp"><img src="img/main-page/cards/itemCard.jpg" alt="img"></picture>
+                  </span>
+                </div>
+                <div class="product-card__body">
+                  <h4 class="product-card__title">
+                    <a href="" class="product-card__link-title">Title Title Title Title Title Title Title Title</a>
+                  </h4>
+                  <div class="product-card__info info-product-card">
+                    <div class="info-product-card__size">95x18</div>
+                    <div class="info-product-card__material">Metal, Airon</div>
+                  </div>
+                  <div class="product-card__rating rating_set">
+                    <div class="rating__body">
+                      <div class="rating__active"></div>
+                      <div class="rating__items">
+                        <input type="radio" class="rating__item" value="1" name="rating">
+                        <input type="radio" class="rating__item" value="2" name="rating">
+                        <input type="radio" class="rating__item" value="3" name="rating">
+                        <input type="radio" class="rating__item" value="4" name="rating">
+                        <input type="radio" class="rating__item" value="5" name="rating">
+                      </div>
+                    </div>
+                    <div class="rating__value">3.6</div>
+                    <div class="rating__info">12 fidback</div>
+                  </div>
+                  <div class="product-card__footer">
+                    <div class="product-card__price">700 coins</div>
+                    <a href="" class="product-card__compare _icon-compare"></a>
+                    <a href="" class="product-card__favorite _icon-favorit"></a>
+                  </div>
+                  <button class="product-card__cart button"><span class="_icon-cart">To cart</span> </button>
+                </div>
+              </article>
+            </div>
+            <div class="catalog__footer">
+              <a href="" class="catalog__more button button_border">Show More</a>
+              <div class="catalog__pagging pagging">
+                <button disabled class="pagging__arrow pagging__arrow_left _icon-spoilerArrow"></button>
+                <ul class="pagging__list">
+                  <li class="pagging__item"><a href="" class="pagging__link _active">1</a></li>
+                  <li class="pagging__item"><a href="" class="pagging__link">2</a></li>
+                  <li class="pagging__item"><a href="" class="pagging__link">3</a></li>
+                  <li class="pagging__item"><a href="" class="pagging__link">...</a></li>
+                  <li class="pagging__item"><a href="" class="pagging__link">15</a></li>
+                </ul>
+                <button class="pagging__arrow pagging__arrow_right _icon-spoilerArrow"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+  </main>
+
+
+
+  <footer class="footer">
     <section class="footer__text text-footer">
         <div class="text-footer__container">
             <h1 class="text-footer__title">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
@@ -725,10 +1208,145 @@
         </div>
     </div>
 </footer>
-	</div>
+</div>
 
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js?_v=20220829141708"></script>
-	<script src="js/script.js?_v=20220829141708"></script>
+
+
+<!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js?_v=20220829141708"></script> -->
+<script>
+
+
+  //rating
+  const ratings = document.querySelectorAll('.product-card__rating');
+  if (ratings.length > 0) {
+    initRatings();
+  }
+
+  function initRatings() {
+    let ratingActive, ratingValue;
+    for (let index = 0; index < ratings.length; index++) {
+      const rating = ratings[index];
+      initRating(rating);
+    }
+  }
+  function initRating(rating) {
+    initRatingVars(rating);
+
+    setRatingActiveWidth();
+
+    if (rating.classList.contains('rating_set')) {
+      setRating(rating);
+    }
+  }
+
+  function initRatingVars(rating) {
+    ratingActive = rating.querySelector('.rating__active');
+    ratingValue = rating.querySelector('.rating__value');
+  }
+
+  function setRatingActiveWidth(index = ratingValue.innerHTML) {
+    const ratingActiveWidth = index / 0.05;
+    ratingActive.style.width = `${ratingActiveWidth}%`;
+  }
+
+  function setRating(rating) {
+    const ratingItems = rating.querySelectorAll('.rating__item');
+    for (let index = 0; index < ratingItems.length; index++) {
+      const ratingItem = ratingItems[index];
+      ratingItem.addEventListener("mouseenter", function (e) {
+        initRatingVars(rating);
+        setRatingActiveWidth(ratingItem.value);
+      });
+
+      ratingItem.addEventListener("mouseleave", function (e) {
+        setRatingActiveWidth();
+      });
+
+      ratingItem.addEventListener("click", function (e) {
+        initRatingVars(rating);
+
+        if (rating.dataset.ajax) {
+          setRatingValue(ratingItem.value, rating);
+        } else {
+          ratingValue.innerHTML = index + 1;
+          setRatingActiveWidth();
+        }
+      });
+    }
+
+
+    async function setRatingValue(value, rating) {
+      if (!rating.classList.contains('rating_sending')) {
+        rating.classList.add('rating_sending');
+        //otpravka dannih(value) na server
+        let response = await fetch('rating.json', {
+          method: 'GET',
+
+          // OTPRAVKA NA REAL SERVER!!!!!!!!!!!!
+
+          // body: JSON.stringify({
+          // 	userRating: value
+          // }),
+          // headers: {
+          // 	'content-type': 'application/json'
+          // }
+        });
+        if (response.ok) {
+          const result = await response.json();
+
+          const newRating = result.newRating;
+
+          ratingValue.innerHTML = newRating;
+
+
+          setRatingActiveWidth();
+          rating.classList.remove('rating_sending');
+
+        } else {
+          alert("ERROR!!!");
+
+          rating.classList.remove('rating_sending');
+        }
+      }
+    }
+  }
+
+  //PopUp
+  function popupOpenClose(popup) {
+
+    /* Add div inside popup for layout if one doesn't exist */
+    if ($(".wrapper").length == 0) {
+      $(popup).wrapInner("<div class='wrapper'></div>");
+    }
+
+    /* Open popup */
+    $(popup).show();
+
+    /* Close popup if user clicks on background */
+    $(popup).click(function (e) {
+      if (e.target == this) {
+        if ($(popup).is(':visible')) {
+          $(popup).hide();
+        }
+      }
+    });
+
+    /* Close popup and remove errors if user clicks on cancel or close buttons */
+    $(popup).find("button[name=close]").on("click", function () {
+      if ($(".formElementError").is(':visible')) {
+        $(".formElementError").remove();
+      }
+      $(popup).hide();
+    });
+  }
+
+  $(document).ready(function () {
+    $("[data-js=open]").on("click", function () {
+      popupOpenClose($(".popup"));
+    });
+  });
+</script>
+<script src="js/app.min.js?_v=20220829141708"></script>
 </body>
 
 </html>
